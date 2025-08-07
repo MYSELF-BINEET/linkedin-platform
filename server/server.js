@@ -18,7 +18,7 @@ const app = express();
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: ["http://localhost:5173","https://iridescent-fudge-886d7b.netlify.app"],
+  origin: ["http://localhost:5173","https://iridescent-fudge-886d7b.netlify.app",process.env.URL],
   credentials: true
 }));
 
